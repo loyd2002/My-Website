@@ -1,0 +1,139 @@
+.navbar a{
+	width: 85%;
+	margin:auto;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	left: 700px;
+}
+.navbar ul li{
+	list-style: none;
+	display: inline-block;
+	margin:0 20px;
+	position: relative;
+}
+.navbar ul li a{
+	text-decoration: none;
+	color: silver;
+	text-transform: uppercase;
+}
+.navbar ul li::after{
+	content: '';
+	height: 3px;
+	width: 0;
+	background: red;
+	position: absolute;
+	left: 700px;
+	bottom: -10px;
+	transition: 0.5s;
+}
+.navbar ul li:hover:after{
+	width: 100%;
+}
+.background {
+    background-image:url(img/haha.jpg);
+        background-position: center;
+        background-size: cover;
+        
+    }
+    
+    .blog-section{
+        width: 100%;
+    }
+    
+    .blog-section .section-content{
+        width: 85%;
+        margin: 20px auto;
+    }
+    
+    
+    .blog-section .section-content .title{
+        width: 60%;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .blog-section .section-content .title h2{
+        font-size: 40px;
+        text-transform: uppercase;
+        font-family: calibri;
+        color: white;
+    }
+    
+    .blog-section .section-content .title p{
+        font-size: 20px;
+        font-family: calibri;
+        color: white;
+        margin-top: 10px;
+    }
+    
+    .blog-section .section-content .cards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        margin: 25px auto;
+    }
+    
+    .blog-section .section-content .cards .card{
+        width: 100%;
+        background: url('img/background.jpg') ;
+        position: relative;
+        box-shadow: 10px 10px 5px #aaaaaa;
+    }
+    
+    .blog-section .section-content .cards img{
+        width: 100%;
+        height: 250px;
+    }
+    
+    .blog-section .section-content .cards .article{
+        padding: 15px 20px;
+    }
+    
+    .blog-section .section-content .cards .article h4{
+        font-size: 24px;
+        color: cyan;
+    }
+    .blog-section .section-content .cards .article p{
+        font-size: 14px;
+        color: cyan;
+        margin: 10px 0px;
+        font-family: tahoma;
+    }
+    
+    .blog-section .section-content .cards .card .blog-view{
+        padding-bottom: 20px;
+    }
+    .blog-section .section-content .cards .card .blog-view a{
+        text-decoration: none;
+        display: inline-block;
+        background-color: black;
+        padding: 8px 15px;
+        margin-left: 20px;
+        color: white;
+    }
+    .blog-section .section-content .cards .posted-date p{
+        font-weight: 600;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        background-color: goldenrod;
+        padding: 6px 15px;
+        color: white;
+    
+    }
+    
+    @media screen and (max-width: 992px){
+        .blog-section .section-content .cards{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
+    @media screen and (max-width: 768px){
+        .blog-section .section-content .cards{
+            grid-template-columns: 1fr; 
+    }
+    }

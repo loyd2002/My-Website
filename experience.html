@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adventure Game</title>
+<link rel="stylesheet" href="home.html">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+    font-size: 50px;
+    background: url('img/haha.jpg');
+  }
+  h1 {
+    color: cyan;
+    text-shadow: 0 0 3px red, 0 0 5px blue;
+
+  }
+  .navbar a{
+	width: 85%;
+	margin:auto;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	left: 700px;
+}
+.navbar ul li{
+	list-style: none;
+	display: inline-block;
+	margin:0 20px;
+	position: relative;
+    right: 400px;
+    font-size: 20px;
+}
+.navbar ul li a{
+	text-decoration: none;
+	color: silver;
+	text-transform: uppercase;
+}
+.navbar ul li::after{
+	content: '';
+	height: 3px;
+	width: 0;
+	background: red;
+	position: absolute;
+	left: 700px;
+	bottom: -10px;
+	transition: 0.5s;
+}
+.navbar ul li:hover:after{
+	width: 100%;
+}
+  p{
+    color: yellow;
+    text-shadow: 0 0 3px red, 0 0 5px blue;
+  }
+  button {
+    padding: 20px 20px;
+    font-size: 16px;
+    margin: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: 5px solid red;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50px;
+  }
+  button:hover {
+    background-color: skyblue;
+    border: 5px solid red;
+  }
+  .button i{
+    color: yellow;
+  }
+
+</style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+               <li><a href="home.html">Home</a></li>
+               <li><a href="info.html">Info</a></li>
+               <li><a href="skills.html">Skills</a></li>
+               <li><a href="experience.html">Experiences</a></li>
+               <li><a href="gallery.html">Gallery</a></li>
+               </ul>
+                
+    
+        </div> 
+  <h1>Welcome to My Experience</h1>
+  <p>This page contains My Experience</p>
+  <button onclick="SeeMyExperience()">Click here to see My Experiences!</button>
+
+  
+  <script>
+    function SeeMyExperience() {
+      document.body.innerHTML = `
+        <h1>My Experiences in life</h1>
+        <div class"image">
+            <h1>Guitarist</h1>
+        <img src="img/skills.jpg">
+        <h1>Bonding</h1>
+        <img src="img/friend2.jpg">
+        <h1>Tattoo experience</h1>
+        <img src="img/skill3.jpg">
+        </div>
+<dic class="button">
+        <a href="experience.html"><i style='font-size:50px' class='fa'>&#xf359;</i></a>
+        </div>
+      `;
+    }
+
+  </script>
+      
+  
+</body>
+</html>
